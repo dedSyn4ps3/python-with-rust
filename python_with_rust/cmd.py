@@ -52,7 +52,7 @@ def cli():
     args = parser.parse_args()
 
     if args:
-        if args.name:
+        if args.app_name:
             update.checkVersion(args.app_name)
         if args.loop:
             rp.run_loops()
