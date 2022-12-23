@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-with-rust"
-version = "1.0.0"
+version = "1.0.1"
 description = "Python with a splash of Rust!"
 authors = ["Ed Rutherford <erutherford@nullsecurity.tech>"]
 readme = "README.md"

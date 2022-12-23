@@ -57,7 +57,7 @@ $ pip install git+https://github.com/dedsyn4ps3/rust-python@main
 
 > **NOTE:** The `@main` at the end of the command ensures you're installing the most current version of the package.
 
-> **PS:** It's also possible to install the Rust package from other sources as well ( such as PyPi ) just like you do for any other regular `pip install` command. The `rusty-python` package used in this project, for example, was made available on [test.pypi.org]("https://test.pypi.org") and could've also been installed using `pip install -i https://test.pypi.org/simple/ rusty-python`
+> **PS:** It's also possible to install the Rust package from other sources as well ( such as PyPi ) just like you do for any other regular `pip install` command. If the `rusty-python` package used in this project, for example, was made available on [pypi.org]("https://www.pypi.org"), it could've been installed using `pip install rusty-python`
 
 <br>
 
