@@ -20,6 +20,11 @@ python-versions = ">=3.6"
 [package.extras]
 plugins = ["importlib-metadata"]
 
+[package.source]
+type = "legacy"
+url = "https://test.pypi.org/simple"
+reference = "testpypi"
+
 [[package]]
 name = "rich"
 version = "12.6.0"
@@ -31,6 +36,7 @@ python-versions = ">=3.6.3,<4.0.0"
 [package.dependencies]
 commonmark = ">=0.9.0,<0.10.0"
 pygments = ">=2.6.0,<3.0.0"
+typing-extensions = {version = ">=4.0.0,<5.0", markers = "python_version < \"3.9\""}
 
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<8.0.0)"]
@@ -48,23 +54,29 @@ rich = ">=11.0.0"
 
 [[package]]
 name = "rusty-python"
-version = "1.0.0"
-description = ""
+version = "1.1.2"
+description = "A test crate for using Rust functions with Python!"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.source]
+type = "legacy"
+url = "https://test.pypi.org/simple"
+reference = "testpypi"
+
+[[package]]
+name = "typing-extensions"
+version = "4.4.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
 category = "main"
 optional = false
 python-versions = ">=3.7"
-develop = false
-
-[package.source]
-type = "git"
-url = "https://github.com/dedSyn4ps3/rusty-python"
-reference = "HEAD"
-resolved_reference = "187ff31efe224b8f48ab35fe0898a04c41151cf6"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.11"
-content-hash = "4b8a6ec0a66bb34cdcdc60758f3abbe9b9d0eecd039df9bde5ea4415874f14e9"
+python-versions = "^3.8"
+content-hash = "9f265f9c0ce99f31505e3a86948541ae6b44ac0fd2c1d03118b9367e769effea"
 
 [metadata.files]
 commonmark = [
@@ -72,8 +84,8 @@ commonmark = [
     {file = "commonmark-0.9.1.tar.gz", hash = "sha256:452f9dc859be7f06631ddcb328b6919c67984aca654e5fefb3914d54691aed60"},
 ]
 pygments = [
-    {file = "Pygments-2.13.0-py3-none-any.whl", hash = "sha256:f643f331ab57ba3c9d89212ee4a2dabc6e94f117cf4eefde99a0574720d14c42"},
-    {file = "Pygments-2.13.0.tar.gz", hash = "sha256:56a8508ae95f98e2b9bdf93a6be5ae3f7d8af858b43e02c5a2ff083726be40c1"},
+    {file = "Pygments-2.13.0-py3-none-any.whl", hash = "sha256:f258f2a4c5bb73c7b9daae54f90aa5fa3aba3390164e059cc0408606a12d0647"},
+    {file = "Pygments-2.13.0.tar.gz", hash = "sha256:e9a08f2ce610f4e86142d6a6d8209f61bea945865993fe46de701f40aed43cdd"},
 ]
 rich = [
     {file = "rich-12.6.0-py3-none-any.whl", hash = "sha256:a4eb26484f2c82589bd9a17c73d32a010b1e29d89f1604cd9bf3a2097b81bb5e"},
@@ -83,4 +95,13 @@ rich-argparse = [
     {file = "rich_argparse-0.6.0-py3-none-any.whl", hash = "sha256:7278a9d97b2b4fca8eb6f5bdfa480333ea4cbaf02aa5338bc5c013fa7a4b20be"},
     {file = "rich_argparse-0.6.0.tar.gz", hash = "sha256:0550912d76f737db36ef3abd409946d5488d8b065b499452328cd51c84dc3745"},
 ]
-rusty-python = []
+rusty-python = [
+    {file = "rusty_python-1.1.2-cp311-cp311-macosx_10_7_x86_64.whl", hash = "sha256:404721d911402ad2248ac430b3d0947b12be8a030061516f415ca5024ee8bed4"},
+    {file = "rusty_python-1.1.2-cp38-cp38-macosx_10_7_x86_64.whl", hash = "sha256:5299dc4ad82bb0b3f8881e763fd9af391314b5b4a31dcc80a314faee34714a41"},
+    {file = "rusty_python-1.1.2-cp39-cp39-macosx_10_7_x86_64.whl", hash = "sha256:a3b066fdb297d3049ff4946288d5d367f094a76fe5ff6f2fa63fc3eac12197ad"},
+    {file = "rusty_python-1.1.2.tar.gz", hash = "sha256:e6057ddc0414c65853e8ce7a3ece45db58ab10ca71a0650fc63cad7926ad8dba"},
+]
+typing-extensions = [
+    {file = "typing_extensions-4.4.0-py3-none-any.whl", hash = "sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"},
+    {file = "typing_extensions-4.4.0.tar.gz", hash = "sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa"},
+]
