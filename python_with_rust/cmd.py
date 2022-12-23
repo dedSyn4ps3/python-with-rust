@@ -41,7 +41,6 @@ def cli():
         "-r", "--rust-arg",
         action="store",
         required=False,
-        default="Curious Dev",
         help="""
         Tell us your name! This `string` value gets passed 
         to the `say_hello` function implemented in Rust. The function also runs 
@@ -58,7 +57,7 @@ def cli():
             rp.run_loops()
         if args.rust_arg:
             rp.say_hello(args.rust_arg)
-            rp.test_request()
+            rp.begin_request_test()
         
     else:
         #print("No arguments provided, bye bye :)")
