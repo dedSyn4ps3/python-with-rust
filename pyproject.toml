@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "python-with-rust"
+version = "1.0.0"
+description = "Python with a splash of Rust!"
+authors = ["Ed Rutherford <erutherford@nullsecurity.tech>"]
+readme = "README.md"
+packages = [{include = "python_with_rust"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+rich = "^12.6.0"
+rich-argparse = "^0.6.0"
+rusty-python = {git = "https://github.com/dedSyn4ps3/rusty-python"}
+
+
+[tool.poetry.scripts]
+rustpy-cli = 'python_with_rust.cmd:cli'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
