@@ -6,18 +6,15 @@ from rich_argparse import RichHelpFormatter
 from python_with_rust.api import update
 import rusty_python as rp
 
-d1 = """
+d = """
 API test application using a combination
 of pure Python functions and additional 
-helper modules written in Rust
-"""
-d2 = """
+helper modules written in Rust.
+
 This application uses several Python libraries to 
 create a colorful commandline app with example 
 functionality implemented in Rust
 """
-
-d = f"{d1}\n{d2}"
 
 def cli():
     parser = argparse.ArgumentParser(
